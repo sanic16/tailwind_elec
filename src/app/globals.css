@@ -2,32 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.hamburguer {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hamburguer-top,
+.hamburguer-middle,
+.hamburguer-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: rotate(0deg);
+  transition: all 0.5s;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hamburguer-middle {
+  transform: translateY(7px);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hamburguer-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open.hamburguer-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open.hamburguer-middle {
+  display: none;
+}
+
+.open.hamburguer-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
