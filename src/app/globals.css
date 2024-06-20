@@ -9,7 +9,7 @@
 }
 
 .item-container {
-  @apply w-full text-2xl text-white uppercase grid grid-cols-[repeat(auto-fill,minmax(calc(25%-32px),1fr))] gap-x-8 gap-y-6;
+  @apply w-full text-2xl text-white uppercase grid md:grid-cols-[repeat(auto-fill,minmax(calc(50%-32px),1fr))] lg:grid-cols-[repeat(auto-fill,minmax(calc(25%-32px),1fr))] gap-x-8 gap-y-6;
 }
 
 .item {
