@@ -1,5 +1,6 @@
 import Creations from "@/sections/Creations";
 import Feature from "@/sections/Feature";
+import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import React from "react";
 
@@ -9,6 +10,7 @@ export default function HomePage() {
       <Header />
       <Feature />
       <Creations />
+      <Footer />
     </>
   );
 }

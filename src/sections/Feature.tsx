@@ -9,7 +9,7 @@ const Feature = () => {
           <Image src={rasp} alt="Feature" className="w-full h-full" />
         </div>
         {/* Text Container */}
-        <div className="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
+        <div className="top-40 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20">
           <h2 className="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left">
             Profesionales en el diseño de sistemas de control y automatización
           </h2>
